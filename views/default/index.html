@@ -1,9 +1,5 @@
-<!DOCTYPE HTML>
-<!--
-	AppVias
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+ï»¿<!DOCTYPE HTML>
+
 <html>
 	<head>
 		<title>AppVias</title>
@@ -11,6 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/css/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="{{=URL('static', 'assets/css/main.css')}}" />
+		<link rel="stylesheet" href="{{=URL('static','assets/css/animation.css')}}"><!--[if IE 7]><link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie/v8.css" /><![endif]-->
 		<!--[if lte IE 8]><script src="assets/css/ie/respond.min.js"></script><![endif]-->
 	</head>
@@ -23,12 +20,12 @@
 					<nav id="nav">
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li>
-								<a href="#" class="icon fa-angle-down">Layouts</a>
-								<ul>
+							<li>    
+								<a href="#" class="icon fa-angle-down">Contato</a>
+<!-- 								<ul>
 									<li><a href="generic.html">Generic</a></li>
-									<li><a href="contact.html">Contact</a></li>
-									<li><a href="{{=URL('default', 'elements.html')}}">Elements</a></li>
+									<li><a href="{{=URL('default', 'contact.html')}}">Contact</a></li>
+									 <li><a href="{{=URL('default', 'elements.html')}}">Elements</a></li> 
 									<li>
 										<a href="#">Submenu</a>
 										<ul>
@@ -38,7 +35,7 @@
 											<li><a href="#">Option Four</a></li>
 										</ul>
 									</li>
-								</ul>
+								</ul> -->
 							</li>
 							<li><a href="#" class="button">Sign Up</a></li>
 						</ul>
@@ -47,11 +44,12 @@
 
 			<!-- Banner -->
 				<section id="banner">
-					<h2>AppVias</h2>
-					<p>Somos um aplicativo que te ajuda nas emergências.</p>
+					<img src="{{=URL('static', 'images', args='icone-appvias.png')}}" style="height:70px; weight:70px;" />
+					<h2 style="font-family:'Arial Black', Gadget, sans-serif;">AppVias</h2>
+					<p>Somos um aplicativo que te ajuda nas emergÃªncias.</p>
 					<ul class="actions">
 						<li><a href="#" class="button special">Sign Up</a></li>
-						<li><a href="#" class="button">Learn More</a></li>
+						<!-- <li><a href="#" class="button">Learn More</a></li> -->
 					</ul>
 				</section>
 
@@ -60,10 +58,10 @@
 
 					<section class="box special">
 						<header class="major">
-							<h2>Mais segurança, mais conforto, mais comodidade
+							<h2>Mais seguranÃ§a, mais conforto, mais comodidade
 							<br />
-							para você e para toda a sua família</h2>
-							<p>Imagine ter todos os números de emergência das Rodovias do Brasil em um só lugar!<br />
+							para vocÃª e para toda a sua famÃ­lia</h2>
+							<p>Imagine ter todos os nÃºmeros de emergÃªncia das Rodovias do Brasil em um sÃ³ lugar!<br />
 							</p>
 						</header>
 						<span class="image featured"><img src="{{=URL('static', 'images', args='pic01.jpg')}}" alt="" /></span>
@@ -74,35 +72,35 @@
 							<section>
 								<span class="icon major fa-bolt accent2"></span>
 								<h3>19 Mil Km</h3>
-								<p>No Brasil, 19 mil km são privatizados. São mais de 50 Concessionárias espalhadas e cada uma com 1 número de atendimento diferente da outra, ainda temos 190, 191, 192, 193, 194, 197, 198 e por ai vai...</p>
+								<p>No Brasil, 19 mil km sÃ£o privatizados. SÃ£o mais de 50 ConcessionÃ¡rias espalhadas e cada uma com 1 nÃºmero de atendimento diferente da outra, ainda temos 190, 191, 192, 193, 194, 197, 198 e por ai vai...</p>
 							</section>
 							<section>
 								<span class="icon major fa-lock accent5"></span>
-								<h3>Tudo em um só lugar</h3>
-								<p>Com o AppVias, colocamos tudo em 1 só lugar. Utilizando a localização do GPS do seu Smartphone (Android ou iOS) iremos te informar: Latitude e Longitude, Concessionária, Posição no Mapa e o mais importante o número de Atendimento que melhor irá lhe atender..</p>
+								<h3>Tudo em um sÃ³ lugar</h3>
+								<p>Com o AppVias, colocamos tudo em 1 sÃ³ lugar. Utilizando a localizaÃ§Ã£o do GPS do seu Smartphone (Android ou iOS) iremos te informar: Latitude e Longitude, ConcessionÃ¡ria, PosiÃ§Ã£o no Mapa e o mais importante o nÃºmero de Atendimento que melhor irÃ¡ lhe atender..</p>
 							</section>
 						</div>
-						<div class="features-row">
-							<section>
-								<span class="icon major fa-cloud accent4"></span>
-								<h3>Conforto e Tranquilidade</h3>
-								<p>Estamos prontos para dar segurança, tranquilidade e conforto nas sua viagens.</p>
-							</section>
-							<section>
-								<span class="icon major fa-area-chart accent3"></span>
-								<h3>Enim phasellus</h3>
-								<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-							</section>
-						</div>
+	<!-- 						<div class="features-row">
+								<section>
+									<span class="icon major fa-cloud accent4"></span>
+									<h3>Conforto e Tranquilidade</h3>
+									<p>Estamos prontos para dar seguranÃ§a, tranquilidade e conforto nas sua viagens.</p>
+								</section>
+								<section>
+									<span class="icon major fa-area-chart accent3"></span>
+									<h3>Enim phasellus</h3>
+									<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+								</section>
+							</div> -->
 					</section>
 
 					<div class="row">
 						<div class="6u 12u(narrower)">
 
 							<section class="box special">
-								<span class="image featured"><img src="{{=URL('static', 'images/pic03_B.jpg')}}" alt="" /></span>
+								<span class="image featured"><img src="{{=URL('static', 'images/pic03_B.jpg')}}" alt="" style="height:256px; weight:572px;"/></span>
 								<h3>Siga o AppVias</h3>
-								<p>Estamos no Twitter e Facebook também! Junte-se a nós.</p>
+								<p>Estamos no Twitter e Facebook tambÃ©m! Junte-se a nÃ³s.</p>
 								<ul class="actions">
 									<li><a href="#" class="button alt">Learn More</a></li>
 								</ul>
@@ -112,9 +110,9 @@
 						<div class="6u 12u(narrower)">
 
 							<section class="box special">
-								<span class="image featured"><img src="{{=URL('static', 'images/pic03.jpg')}}" alt="" /></span>
+								<span class="image featured"><img src="{{=URL('static', 'images/public-domain-images-free-high-quality-resolution-2014-02-25-0003.jpg')}}" alt="" style="height:256px; weight:572px;"/></span>
 								<h3>Olhando o Futuro</h3>
-								<p>Futuramente, em parceria com as concessionárias, o próprio aplicativo entra em contato com a emergência do local dando todas as referências e localização necessária para que o atendimento seja ráido, eficaz e sem traumas para você.</p>
+								<p>Futuramente, em parceria com as concessionÃ¡rias, o prÃ³prio aplicativo entra em contato com a emergÃªncia do local dando todas as referÃªncias e localizaÃ§Ã£o necessÃ¡ria para que o atendimento seja rÃ¡ido, eficaz e sem traumas para vocÃª.</p>
 								<ul class="actions">
 									<li><a href="#" class="button alt">Learn More</a></li>
 								</ul>
@@ -128,8 +126,8 @@
 			<!-- CTA -->
 				<section id="cta">
 
-					<h2>Assine para receber em primeira mão o AppVias</h2>
-					<p>Iremos disponibilizar nosso aplicativo para que você nos diga o que achou.</p>
+					<h2>Assine para receber em primeira mÃ£o o AppVias</h2>
+					<p>Iremos disponibilizar nosso aplicativo para que vocÃª nos diga o que achou.</p>
 
 					<form>
 						<div class="row uniform 50%">
@@ -155,7 +153,8 @@
 						<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; AppVias. All rights reserved.</li>
+						<!-- <li>Design: <a href="http://html5up.net">HTML5 UP</a></li> -->
 					</ul>
 				</footer>
 
