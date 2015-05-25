@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from gluon.custom_import import track_changes
 track_changes(True)
+# from mail import Mailer
 
 from gluon.contrib.markdown.markdown2 import markdown
 from gluon.tools import Auth, Service, Crud
@@ -16,7 +17,7 @@ crud = Crud(db)
 
 
 # Initialize Mail
-mail = Mailer()
+# mail = Mailer()
 
 # the settings for model and auth
 auth = Auth(db, hmac_key=Auth.get_or_create_key())
@@ -37,7 +38,7 @@ auth.settings.register_next = config.auth.settings.register_next
 	# config.auth.messages.registration_successful
 
 
-register on accept
+# register on accept
 auth.settings.register_onaccept = \
 	lambda form: mail.my_mail_sender(template="Bem Vindo",
 									context=form.vars,

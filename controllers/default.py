@@ -4,11 +4,10 @@
 def index():
 
     form = SQLFORM.factory(
-                Field('name', requires=IS_NOT_EMPTY()),
-                Field('email', requires =[ IS_EMAIL(error_message='invalid email!'), IS_NOT_EMPTY() ]),
-                Field('subject', requires=IS_NOT_EMPTY()),
-                Field('message', requires=IS_NOT_EMPTY(), type='text')
-                )   
+                Field('email', requires =[ IS_EMAIL(error_message='invalid email!'), IS_NOT_EMPTY() ]))
+    form['_id'] = "email"
+    form['_placeholder'] = "Email Address"
+    form['_name'] = "email"
     if form.process().accepted:
         session.name = form.vars.name
         session.email = form.vars.email
@@ -29,7 +28,7 @@ def index():
     elif form.errors:
             response.flash='form has errors.'
 
-    return dict()
+    return dict(form=form)
 
 
 def contact():
