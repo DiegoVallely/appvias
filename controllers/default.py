@@ -28,6 +28,8 @@ def index():
     elif form.errors:
             response.flash='form has errors.'
 
+    # print(form)
+
     return dict(form=form)
 
 
